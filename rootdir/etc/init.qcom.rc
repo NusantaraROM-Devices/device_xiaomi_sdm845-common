@@ -180,7 +180,9 @@ on boot
     chmod 0666 /sys/kernel/gpu/gpu_clock
     chmod 0666 /sys/kernel/gpu/gpu_busy
 
-    # This location is used by QCRIL to host UNIX domain
+    chown system system /sys/kernel/hbtp/display_pwr
+    
+# This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
     # modules
     mkdir /dev/socket/qmux_radio 0770 radio radio
