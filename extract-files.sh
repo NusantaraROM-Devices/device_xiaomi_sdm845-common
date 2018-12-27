@@ -22,7 +22,6 @@ source "${HELPER}"
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
-
 ONLY_COMMON=
 ONLY_TARGET=
 SECTION=
@@ -56,6 +55,36 @@ done
 if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
+
+function blob_fixup() {
+    case "${1}" in
+    vendor/etc/permissions/qti_libpermissions.xml)
+        sed -i 's|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g' "${2}"
+        ;;
+    vendor/etc/permissions/qti-vzw-ims-internal.xml)
+        sed -i 's|/system/vendor/framework/qti-vzw-ims-internal.jar|/vendor/framework/qti-vzw-ims-internal.jar|g' "${2}"
+        ;;
+    vendor/etc/permissions/qcrilhook.xml)
+        sed -i 's|/system/framework/qcrilhook.jar|/vendor/framework/qcrilhook.jar|g' "${2}"
+        ;;
+    vendor/lib/libMiCameraHal.so)
+        sed -i 's|system/etc/dualcamera.png|vendor/etc/dualcamera.png|g' "${2}"
+        patchelf --replace-needed "libicuuc.so" "libicuuc-v27.so" "${2}"
+        ;;
+    vendor/lib/hw/camera.msm8998.so)
+        patchelf --replace-needed "libminikin.so" "libminikin-v27.so" "${2}"
+        ;;
+    vendor/lib/libicuuc-v27.so)
+        patchelf --set-soname "libicuuc-v27.so" "${2}"
+        ;;
+    vendor/lib/libminikin-v27.so)
+        patchelf --set-soname "libminikin-v27.so" "${2}"
+        ;;
+    vendor/lib/libmmcamera2_sensor_modules.so)
+        sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${2}"
+        ;;
+    esac
+}
 
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
