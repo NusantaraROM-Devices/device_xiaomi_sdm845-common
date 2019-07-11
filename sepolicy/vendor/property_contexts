@@ -17,7 +17,6 @@ ro.vendor.sensors.mot_ltv   u:object_r:camera_prop:s0
 
 # Fingerprint
 persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
-ro.boot.fpsensor           u:object_r:vendor_fp_prop:s0
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 
