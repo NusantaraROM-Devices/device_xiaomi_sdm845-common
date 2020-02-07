@@ -17,3 +17,7 @@ allow hal_camera_default sensors_dbg_prop:file {open read getattr};
 allow hal_camera_default unlabeled:dir search;
 
 get_prop(hal_camera_default, camera_ro_prop)
+
+userdebug_or_eng(`
+  get_prop(hal_camera_default, sensors_dbg_prop)
+')
