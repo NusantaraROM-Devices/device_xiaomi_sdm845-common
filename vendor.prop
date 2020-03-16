@@ -139,3 +139,4 @@ ro.hardware.egl=adreno
 
 # USB
 vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
