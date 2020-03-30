@@ -112,6 +112,11 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
+# Codec2
+PRODUCT_PACKAGES += \
+    codec2.vendor.ext.policy \
+    codec2.vendor.base.policy
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
