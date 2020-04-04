@@ -1,6 +1,6 @@
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,13 +27,11 @@ def IncrementalOTA_InstallEnd(info):
   return
 
 def FullOTA_Assertions(info):
-  input_zip = info.input_zip
-  AddBasebandAssertion(info, input_zip)
+  AddTrustZoneAssertion(info, info.input_zip)
   return
 
 def IncrementalOTA_Assertions(info):
-  input_zip = info.target_zip
-  AddBasebandAssertion(info, input_zip)
+  AddTrustZoneAssertion(info, info.target_zip)
   return
 
 def AddImage(info, input_zip, basename, dest):
@@ -50,14 +48,12 @@ def OTA_InstallEnd(info, input_zip):
   AddImage(info, input_zip, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   return
 
-def AddBasebandAssertion(info, input_zip):
-  android_info = input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-baseband\s*=\s*(.+)', android_info)
+def AddTrustZoneAssertion(info, input_zip):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
   if m:
-    timestamp, firmware_version = m.group(1).rstrip().split(',')
-    timestamps = timestamp.split('|')
-    if ((len(timestamps) and '*' not in timestamps) and \
-        (len(firmware_version) and '*' not in firmware_version)):
-      cmd = 'assert(xiaomi.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in timestamps]) + ') == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd.format(timestamps, firmware_version))
+    versions = m.group(1).split('|')
+    if len(versions) and '*' not in versions:
+      cmd = 'assert(xiaomi.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 10 based MIUI build. Please upgrade firmware and retry!"););'
+      info.script.AppendExtra(cmd)
   return
