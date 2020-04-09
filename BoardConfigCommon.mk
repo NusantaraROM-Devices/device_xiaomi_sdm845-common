@@ -130,6 +130,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
 TARGET_USES_NON_LEGACY_POWERHAL := true
+TARGET_POWER_SET_FEATURE_LIB := libpower_feature.xiaomi_sdm845
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
