@@ -10,3 +10,11 @@ allow hal_camera_default sysfs_leds:file rw_file_perms;
 allow hal_camera_default sysfs_leds:lnk_file read;
 
 r_dir_file(hal_camera_default, persist_camera_file)
+
+allow hal_camera_default persist_camera_prop:file {open read getattr};
+allow hal_camera_default persist_file:lnk_file read;
+allow hal_camera_default sensors_dbg_prop:file {open read getattr};
+allow hal_camera_default unlabeled:dir search;
+allow hal_camera_default additional_prop:file {open read getattr map};
+
+get_prop(hal_camera_default, camera_ro_prop)
