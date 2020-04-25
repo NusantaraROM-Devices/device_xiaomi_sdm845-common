@@ -94,6 +94,9 @@ ro.vendor.display.cabl=2
 # DRM
 drm.service.enabled=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
