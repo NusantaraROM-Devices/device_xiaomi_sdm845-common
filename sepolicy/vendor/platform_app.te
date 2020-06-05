@@ -1,7 +1,6 @@
 allow platform_app radio_data_file:dir getattr; 
 allow platform_app sysfs_kgsl:dir search;
 allow platform_app sysfs_graphics:file r_file_perms;
-allow platform_app additional_prop:file { read open getattr map };
 allow platform_app cgroup:file { read open getattr map };
 
 # Face Unlock

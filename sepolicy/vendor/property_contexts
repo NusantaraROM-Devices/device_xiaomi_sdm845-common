@@ -4,17 +4,6 @@ persist.camera.             u:object_r:camera_prop:s0
 persist.vendor.camera.      u:object_r:camera_prop:s0
 vendor.camera.              u:object_r:camera_prop:s0
 vidhance.                   u:object_r:camera_prop:s0
-ro.camera.req.fmq.size              u:object_r:additional_prop:s0
-ro.camera.res.fmq.size              u:object_r:additional_prop:s0
-ro.vendor.df.effect.conflict        u:object_r:additional_prop:s0
-ro.miui.notch                       u:object_r:additional_prop:s0
-vendor.panel.display                u:object_r:additional_prop:s0
-ro.product.system.manufacturer      u:object_r:additional_prop:s0
-persist.debug.sf.showfps            u:object_r:additional_prop:s0
-ro.product.mod_device               u:object_r:additional_prop:s0
-ro.vendor.audio.us.proximity        u:object_r:additional_prop:s0
-LEUELCPPLO                          u:object_r:additional_prop:s0
-aip.mibokeh.dumprgb                 u:object_r:additional_prop:s0
 
 # Display post processing
 init.svc.ppd                             u:object_r:vendor_dpps_prop:s0
@@ -34,7 +23,8 @@ vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 
 # Google camera hal read only props
 ro.vendor.camera.                               u:object_r:camera_ro_prop:s0
-ro.camera.                                      u:object_r:camera_ro_prop:s0
+ro.camera.req.fmq.size                          u:object_r:additional_prop:s0
+ro.camera.res.fmq.size                          u:object_r:additional_prop:s0
 
 # Mlipay
 persist.vendor.sys.pay.ifaa              u:object_r:vendor_tee_listener_prop:s0
