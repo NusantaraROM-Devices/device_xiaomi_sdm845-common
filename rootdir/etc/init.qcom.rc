@@ -212,6 +212,24 @@ on boot
     # Set the console loglevel to < KERN_INFO
     # Set the default message loglevel to KERN_INFO
     write /proc/sys/kernel/printk "6 6 1 7"
+    
+    # Flashlight
+    chown root system /sys/class/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/class/leds/led:torch_0/max_brightness
+    chown root system /sys/class/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/class/leds/led:torch_1/max_brightness
+    write /sys/class/leds/led:torch_1/max_brightness 0
+    
+    # Vibration
+    chown system system /sys/class/leds/vibrator/vmax_override
+    chmod 0660 /sys/class/leds/vibrator/vmax_override
+    write /sys/class/leds/vibrator/vmax_override 1
+    chown system system /sys/class/leds/vibrator/vmax_mv_user
+    chmod 0660 /sys/class/leds/vibrator/vmax_mv_user
+    chown system system /sys/class/leds/vibrator/vmax_mv_strong
+    chmod 0660 /sys/class/leds/vibrator/vmax_mv_strong
+    chown system system /sys/class/leds/vibrator/vmax_mv_call
+    chmod 0660 /sys/class/leds/vibrator/vmax_mv_call
 
     # Allow access for CCID command/response timeout configuration
     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
