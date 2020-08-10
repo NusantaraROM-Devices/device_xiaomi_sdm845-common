@@ -14,3 +14,6 @@ genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-02/200f000.q
 # XiaomiParts
 genfscon sysfs /sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headgain:s0
 genfscon sysfs /sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
+
+# FPS info
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps       u:object_r:sysfs_graphics:s0
