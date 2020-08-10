@@ -23,3 +23,6 @@ genfscon sysfs /sys/kernel/sound_control/mic_gain                           u:ob
 #power-libperfmgr
 genfscon debugfs /sched_features                      u:object_r:debugfs_sched_features:s0
 genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sysctl_schedboost:s0
+
+# FPS info
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps       u:object_r:sysfs_graphics:s0
