@@ -298,6 +298,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
 PRODUCT_COPY_FILES += \
