@@ -353,11 +353,11 @@ PRODUCT_PACKAGES += \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.dipper \
+    android.hardware.thermal@2.0-service.xiaomi_sdm845 \
 
 # Thermal HAL config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
 
 # Tracing
 PRODUCT_PACKAGES += \
