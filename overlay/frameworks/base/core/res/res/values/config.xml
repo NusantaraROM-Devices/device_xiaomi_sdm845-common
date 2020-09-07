@@ -383,4 +383,8 @@
     <string name="config_gpu_clock_path" translatable="false">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_gpu_busy_path" translatable="false">/sys/kernel/gpu/gpu_busy</string>
     <string name="config_battery_level_path" translatable="false">/sys/class/power_supply/battery/capacity</string>
+
+    <!-- Add Xiaomiparts To ZenHub-->
+    <string name="config_device_parts_package_name" translatable="false">org.lineageos.settings.device</string>
+    <string name="config_device_parts_package_activity" translatable="false">org.lineageos.settings.device.DeviceSettingsActivity</string>
 </resources>
