@@ -29,7 +29,6 @@ LOCAL_SHARED_LIBRARIES := \
     libcutils \
     libdl \
     libhidlbase \
-    libhidltransport \
     liblog \
     libutils \
     libxml2
