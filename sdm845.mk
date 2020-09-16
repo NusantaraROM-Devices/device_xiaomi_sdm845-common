@@ -186,18 +186,12 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
 
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
-=======
-    android.hardware.drm@1.2-service.clearkey
->>>>>>> ffc6afc... sdm845-common: Remove DRM Widevine and Clearkey HALs
 
 # Health
 PRODUCT_PACKAGES += \
