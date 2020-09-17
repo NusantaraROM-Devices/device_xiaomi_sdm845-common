@@ -248,9 +248,7 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     libjson \
-    librmnetctl \
-    libprotobuf-cpp-full \
-    libprotobuf-cpp-lite
+    librmnetctl
 
 # RCS
 PRODUCT_PACKAGES += \
