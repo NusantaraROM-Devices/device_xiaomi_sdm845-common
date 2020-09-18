@@ -272,8 +272,8 @@ vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib/libdpmqmihal.so
 
 # DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
-product/lib/libdpmframework.so|168e2ec57d888575512f3d0f9b78eaf08b607158
-product/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
+product/lib/libdpmframework.so
+product/lib64/libdpmframework.so
 
 # DRM
 vendor/bin/qseecomd
