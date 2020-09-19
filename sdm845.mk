@@ -290,6 +290,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 # Telephony
 PRODUCT_PACKAGES += \
