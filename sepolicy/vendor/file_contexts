@@ -53,6 +53,7 @@
 /vendor/bin/hw/android\.hardware\.power@1\.2-service                                                    u:object_r:hal_power_default_exec:s0
 
 # Persist files
+/persist(/.*)?                                u:object_r:mnt_vendor_file:s0
 /mnt/vendor/persist/audio(/.*)?               u:object_r:persist_audio_file:s0
 /mnt/vendor/persist/camera(/.*)?              u:object_r:persist_camera_file:s0
 
