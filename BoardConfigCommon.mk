@@ -164,7 +164,6 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_VNDK_VERSION := current
-BOARD_VNDK_RUNTIME_DISABLE := true
 
 # WiFi
 BOARD_USES_AOSP_WLAN_HAL := true
