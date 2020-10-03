@@ -1,4 +1,4 @@
-# Common proprietary files - from beryllium' MIUI package V12.0.1.0 QEJMIXM global version, unless pinned
+# Common proprietary files - from dipper' MIUI package V11.0.5.0.QEAMIXM, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
