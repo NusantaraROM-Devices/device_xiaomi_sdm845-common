@@ -108,9 +108,6 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
 # Codec2
 PRODUCT_PACKAGES += \
     codec2.vendor.ext.policy \
