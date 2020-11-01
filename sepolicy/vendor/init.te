@@ -1,3 +1,15 @@
+allow init hal_perf_default:binder call;
+allow init hal_perf_hwservice:hwservice_manager find;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init hwservicemanager:binder { call transfer };
+allow init same_process_hal_file:file execute;
+allow init servicemanager:binder { call transfer };
+allow init socket_device:sock_file { create setattr };
+allow init sysfs:file create;
+allow init sysfs_leds:file { create read };
+allow init system_server:binder call;
+allow init vendor_file:file execute;
+
 dontaudit init { bt_firmware_file firmware_file }:filesystem getattr;
 
 allow init self:netlink_route_socket rw_socket_perms;

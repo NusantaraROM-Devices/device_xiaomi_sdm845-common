@@ -1,4 +1,13 @@
+allow system_server app_zygote:process getpgid;
+allow system_server kernel:system syslog_read;
+allow system_server vendor_persist_camera_prop:file { getattr open read };
+allow system_server vendor_default_prop:file { getattr open read };
+
 binder_call(system_server, glgps)
 
 get_prop(system_server, vendor_default_prop)
 get_prop(system_server, persist_camera_prop)
+
+userdebug_or_eng(`
+allow system_server vendor_wfd_sys_debug_prop:file { getattr open read };
+')

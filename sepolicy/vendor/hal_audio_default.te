@@ -1,8 +1,13 @@
+allow hal_audio_default audio_socket:sock_file rw_file_perms;
 allow hal_audio_default mnt_vendor_file:dir search;
-r_dir_file(hal_audio_default, persist_audio_file)
+allow hal_audio_default mnt_vendor_file:file { open read };
+allow hal_audio_default sysfs:dir open;
 
+r_dir_file(hal_audio_default, persist_audio_file)
 set_prop(hal_audio_default, vendor_audio_prop)
 
-allow hal_audio_default audio_socket:sock_file rw_file_perms;
-
 dontaudit hal_audio_default sysfs:dir read;
+
+userdebug_or_eng(`
+allow hal_audio_default diag_device:chr_file { ioctl open read write };
+')
