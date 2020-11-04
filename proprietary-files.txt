@@ -953,8 +953,6 @@ vendor/etc/init/wfdvndservice.rc
 vendor/etc/wfdconfig.xml
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/lib64/libwfddisplayconfig_proprietary.so
-vendor/lib64/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libwfdaac_vendor.so
@@ -979,6 +977,3 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-vendor/lib/libwfdutils_proprietary.so
-vendor/lib/libmmosal.so
-vendor/lib/libwfddisplayconfig_proprietary.so
