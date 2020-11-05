@@ -128,3 +128,7 @@ ro.vendor.audio.soundtrigger.hist.duration=1500
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+#vulkan
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
