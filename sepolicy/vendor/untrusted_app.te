@@ -1,2 +1,4 @@
 get_prop(untrusted_app, vendor_default_prop)
 get_prop(untrusted_app, theme_prop)
+
+dontaudit untrusted_app hal_memtrack_hwservice:hwservice_manager find;
