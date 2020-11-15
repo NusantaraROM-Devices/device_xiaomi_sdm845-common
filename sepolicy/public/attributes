@@ -1,5 +1,1 @@
 hal_attribute_nad(mlipay)
-
-attribute hal_mlipay;
-attribute hal_mlipay_client;
-attribute hal_mlipay_server;

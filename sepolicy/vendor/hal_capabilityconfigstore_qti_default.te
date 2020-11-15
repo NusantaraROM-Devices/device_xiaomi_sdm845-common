@@ -1,3 +1,0 @@
-userdebug_or_eng(`
-allow hal_capabilityconfigstore_qti_default vendor_cap_configstore_dbg_prop:file { getattr open read };
-')

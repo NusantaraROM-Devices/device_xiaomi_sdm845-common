@@ -1,2 +1,0 @@
-allow bluetooth vendor_bluetooth_prop:file { getattr open read };
-allow bluetooth vendor_default_prop:file { getattr open };

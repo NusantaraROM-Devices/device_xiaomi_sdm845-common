@@ -1,1 +1,0 @@
-allow vendor_hal_qteeconnector_qti hal_secure_element_default:binder transfer;

@@ -1,3 +1,0 @@
-userdebug_or_eng(`
-allow vendor_dpmd diag_device:chr_file { ioctl open read write };
-')
