@@ -397,7 +397,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libminijail \
-    libavservices_minijail
+    libavservices_minijail \
+    libavservices_minijail.vendor
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
