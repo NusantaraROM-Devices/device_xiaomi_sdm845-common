@@ -157,7 +157,8 @@ PRODUCT_PACKAGES += \
     XiaomiParts \
     Gcam \
     GalleryGo \
-    KimciRecorder
+    KimciRecorder \
+    XiaomiPocketMode
 
 # Display
 PRODUCT_PACKAGES += \
