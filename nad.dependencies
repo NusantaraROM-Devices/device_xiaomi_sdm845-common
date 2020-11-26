@@ -8,6 +8,6 @@
     "remote": "gitlab",
     "repository": "goodmeow/vendor_xiaomi",
     "target_path": "vendor/xiaomi",
-    "branch": "11-wip"
+    "branch": "11-caf"
   }
 ]
