@@ -9,5 +9,11 @@
     "repository": "goodmeow/vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch": "11-caf"
+  },
+  {
+    "remote": "nad",
+    "repository": "android_packages_apps_NusantaraParts",
+    "target_path": "packages/apps/NusantaraParts",
+    "branch": "4.9"
   }
 ]
