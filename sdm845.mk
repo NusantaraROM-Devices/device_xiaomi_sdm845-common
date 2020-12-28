@@ -158,7 +158,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts \
-    Gcam \
+    Snap \
     GalleryGo \
     KimciRecorder \
     XiaomiPocketMode
