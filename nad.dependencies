@@ -8,12 +8,6 @@
     "remote": "gitlab",
     "repository": "goodmeow/vendor_xiaomi",
     "target_path": "vendor/xiaomi",
-    "branch": "11-caf"
-  },
-  {
-    "remote": "ghpriv",
-    "repository": "Nusantara-ROM/android_packages_apps_NusantaraParts",
-    "target_path": "packages/apps/NusantaraParts",
-    "branch": "11-4.9"
+    "branch": "11"
   }
 ]
