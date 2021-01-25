@@ -1,2 +1,3 @@
 # Allow vendor_init to write to sysfs_ssr_toggle
 allow vendor_init sysfs_ssr_toggle:file w_file_perms;
+allow vendor_init apex_metadata_file:dir create_dir_perms;
