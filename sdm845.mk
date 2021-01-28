@@ -141,6 +141,9 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
     android.hardware.contexthub@1.0-service
 
+# Configure dex2oat
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
