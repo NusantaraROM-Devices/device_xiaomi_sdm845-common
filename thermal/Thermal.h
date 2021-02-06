@@ -14,8 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#ifndef ANDROID_HARDWARE_THERMAL_V2_0_CROSSHATCH_THERMAL_H
-#define ANDROID_HARDWARE_THERMAL_V2_0_CROSSHATCH_THERMAL_H
+#ifndef ANDROID_HARDWARE_THERMAL_V2_0_DIPPER_THERMAL_H
+#define ANDROID_HARDWARE_THERMAL_V2_0_DIPPER_THERMAL_H
 
 #include <mutex>
 #include <thread>
@@ -93,4 +93,4 @@ class Thermal : public IThermal {
 }  // namespace hardware
 }  // namespace android
 
-#endif  // ANDROID_HARDWARE_THERMAL_V2_0_CROSSHATCH_THERMAL_H
+#endif  // ANDROID_HARDWARE_THERMAL_V2_0_DIPPER_THERMAL_H
