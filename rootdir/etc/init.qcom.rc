@@ -47,9 +47,6 @@ on early-init
 
     symlink /data/tombstones /tombstones
 
-on late-init
-    setprop vendor.thermal.config thermal_info_config.json
-    
 on init
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
