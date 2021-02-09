@@ -273,6 +273,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.0.vendor
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
