@@ -285,6 +285,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/permissions/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
 
+# QTI
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    telephony
+
 # Radio
 PRODUCT_PACKAGES += \
     libjson \
