@@ -1,5 +1,8 @@
 soong_namespace {
     imports: [
         "hardware/xiaomi",
+        "vendor/qcom/common/av",
+        "vendor/qcom/common/bt",
+        "vendor/qcom/common/telephony",
     ],
 }
