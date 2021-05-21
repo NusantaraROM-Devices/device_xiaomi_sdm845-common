@@ -1,0 +1,13 @@
+[
+  {
+    "remote": "nad",
+    "repository": "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "goodmeow/vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "11"
+  }
+]
