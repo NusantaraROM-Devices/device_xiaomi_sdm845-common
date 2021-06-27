@@ -668,7 +668,7 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 # RIL - from pyxis - RKQ1.200826.002/21.3.31
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|20da64a1fbb4d9c04c763333c4d9a0b7c1053fb9
 system_ext/framework/qcrilhook.jar|ad688364314100318f305ed4ab5defec8766b20a
-system_ext/framework/qti-telephony-common.jar|6811a8482a1951039b143e35447902d7442c7e71
+system_ext/framework/qti-telephony-common.jar|753774ed28aa2951f3a6f515fdbe33e36bc52bee
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|863a36fb4daf2f1ec478c1c765e3b5a7d3af0190
 -vendor/app/IWlanService/IWlanService.apk|fcb1740cdc53c2845eb0609244e3d9790f21c232
 vendor/bin/adpl|09ac73782ef4d1345a13045c7627a46a9e4dbb89
@@ -694,7 +694,7 @@ vendor/lib/libnetmgr_nr_fusion.so|efb6761ae6979bc378fef42f10e5b34d4333769f
 vendor/lib/libnetmgr_rmnet_ext.so|16dcdbe1515445148458fc2c75d3a02edb3c73f9
 vendor/lib/libpdmapper.so|718e667eaa0912f5e74d25a35a12c770cc983a3c
 vendor/lib/libpdnotifier.so|df456450dd5d9a35516ee845727221da68b89bba
-vendor/lib/libqcrilFramework.so|408379cb56377ab26b024e6e5ef500883599a79f
+vendor/lib/libqcrilFramework.so|97b7375db627fc56456fa5c1ee9668209ea2f301
 vendor/lib/libqrtr.so|545d74fb62d03ecf834d9374e95620598d38ee3b
 vendor/lib/libqsocket.so|c4cbaa2f1137630798f8a32ef03265b4f48893a3
 vendor/lib/libril-qc-logger.so|7dec9e079ba51e035f3ad9b6c11bb6ecfb493c84
@@ -705,7 +705,7 @@ vendor/lib/librilqmiservices.so|0e49a8cb427e34068228995636b80a4ed15af839
 vendor/lib/libsettings.so|4675b302e5a1b84249d5791e5393110dcae783a3
 vendor/lib/libsystem_health_mon.so|b43495b41d41130be0ebf4efe37e8aba66ce4ab4
 vendor/lib/qcrild_librilutils.so|d375400f50d03a706d13ba735988cd5136a72c20
-vendor/lib/qtimutex.so|71009c8b9590a24fb8d8513ab835a0de41fc8382
+vendor/lib/qtimutex.so|7ec8be2bb9374373c615a5ca1bef2523df760030
 vendor/lib64/libconfigdb.so|70ba4bed1a76c600c77b2f2f61328c7c5908a9d3
 vendor/lib64/liblqe.so|4163547fe7dc6cbdcddc052ed375224f480e27be
 vendor/lib64/libmdmdetect.so|7d9594eaa6da36b1cf7a7f9ca9447c568dcb2f38
@@ -716,10 +716,10 @@ vendor/lib64/libnetmgr_rmnet_ext.so|1ae234ea8eab246da3277a4e5f041618efa3a064
 vendor/lib64/libnlnetmgr.so|30774ac606a66da3d0394614664caa166cc3f714
 vendor/lib64/libpdmapper.so|a302eef09f60db55f9e7405898fe166b29787353
 vendor/lib64/libpdnotifier.so|fcc36813ae6768fa3570e5368ef651c2eb2c0fa6
-vendor/lib64/libqcrilFramework.so|667e584a6bb133ffbcb09e061099a12a417e33e1
+vendor/lib64/libqcrilFramework.so|814ba1e848a86f1ecad739101f2b224d7df7d714
 vendor/lib64/libqrtr.so|6f7abe88e19e44f6b933de1cac0c7a3437318f04
 vendor/lib64/libqsocket.so|391748e46f7dbbf267dbc5a5c89f0d2a8b4fca4e
-vendor/lib64/libril-qc-hal-qmi.so|9b1d93970207f76adc5ac2d4a68cdc09092afa30
+vendor/lib64/libril-qc-hal-qmi.so|2c0bee07ec882d118a5795eddcc01ad192683ce4
 vendor/lib64/libril-qc-logger.so|f2dd7007382be511f508f0ac94fef1fb2bc6ed80
 vendor/lib64/libril-qc-ltedirectdisc.so|c5f7a0e1438542108356e47eb37263969a117c5f
 vendor/lib64/libril-qc-radioconfig.so|8ebfc843c0a03322ac9adf58b1676ca46ffb3e0b
@@ -728,8 +728,8 @@ vendor/lib64/librilqmiservices.so|d8f6263bfd4d7b00370d2f2042af2545b394dd1c
 vendor/lib64/libsettings.so|87650981b8ccbde785ea8b1c23a33a833e64a8a6
 vendor/lib64/libsystem_health_mon.so|ebe87c25638ef68937c3820db0d49bc762a74619
 vendor/lib64/qcrild_librilutils.so|69354ed8d4f5b18dc890e292bcbfec01fa37edf7
-vendor/lib64/qtibus.so|213ea5270e571e2267b527080e2a3ebe604de37f
-vendor/lib64/qtimutex.so|518032b2a121cbaee6ca63a316a4bcbfac76c668
+vendor/lib64/qtibus.so|b3e0efed2ec5aa43f1b7c1c6dd36b29233b8ba36
+vendor/lib64/qtimutex.so|885ed0c352fa0c58fdf6dbb3054c53675a851342
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|a77f4d9dd970cc962d6c54fc1ced921214bcd2aa
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|c6dd375aba54c664e61cf1915477feb01154333f
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so|6d7ac9ee3a9249deb30095d0ab753a4a448f6388
@@ -827,39 +827,43 @@ vendor/bin/thermal-engine
 vendor/lib64/libthermalclient.so
 vendor/lib/libthermalclient.so
 
-# Time services - from OnePlus6 - RKQ1.201217.002/2107130217
--vendor/app/TimeService/TimeService.apk|fc62dd7314c5ce2e767008f80f5fee751b87b488
-vendor/bin/time_daemon|f58945c0d9c75aaf36a40676ff2737022e9dd38b
-vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib/libtime_genoff.so|9f1e0fd1180207b3df81aa65c319b0d5a467d74c
-vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
+# Time services
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
+vendor/etc/init/init.time_daemon.rc
+vendor/lib64/libtime_genoff.so
+vendor/lib/libtime_genoff.so
 
-# Trusted Execution Environment connector - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|a12cd8a3d326609ee0f0a0cdb5cfc69bd2085f1e
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b1bc0ead06702a3c78c8666b40bb4b1302a68ff8
-vendor/lib/libGPQTEEC_vendor.so|348370fe6a4a9e65f4dd44d8498ba9f847a0a1f1
-vendor/lib/libGPTEE_vendor.so|b2bafe26d5365eae1948730194206dfc3e0ba733
-vendor/lib/libQTEEConnector_vendor.so|9a9af7897fa571dfcedf3d7e7947d5d80cf371d3
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|19dca9b4ee8f90339923902ecfc93545ca9b0eca
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|eefec236d8413c8f9a89f76848118f01096e13fc
-vendor/lib64/libGPQTEEC_vendor.so|64b5d081cc602ecd7d0183702c9110ca435045ba
-vendor/lib64/libGPTEE_vendor.so|527c8393ef416a9ddca4337fb4b5a1618551de44
-vendor/lib64/libQTEEConnector_vendor.so|bf3050ea3ef5435f0289092681f07a2fe834958b
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
+# Trusted Execution Environment connector
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/libGPQTEEC_vendor.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib/libGPQTEEC_vendor.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib/libQTEEConnector_vendor.so
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Trusted User Interface - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|37a9af9fbdf5e3ec24129037d6f2fc16317ade23
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
+# Trusted User Interface
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 
-# Widevine DRM
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
-vendor/lib/mediadrm/libwvdrmengine.so
+# Widevine DRM - from pyxis - RKQ1.200826.002/21.3.31
+vendor/bin/hw/android.hardware.drm@1.3-service.clearkey|6354947cf00062761fe31010bb8cf527529d0d86
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|92e4797cb000e86ba74fba9da2c014d7ec8fa1a6
+vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc|b0e3c49bd13edef549f3afe0b6d64793ec8d2888
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml|246197862d6564abf82f9e0b77f07e758d7adeb2
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|7b5ce1f3b14535feaa61f5f1e4e5f45f24171792
+vendor/lib64/mediadrm/libwvdrmengine.so|5e8e3f7db254b6360653224982df42bf7441ab4a
+vendor/lib64/libwvhidl.so|c03b9059440114531fd2b38beab6a894f79706f6
+vendor/lib/mediadrm/libwvdrmengine.so|b54bcbe9b8fe88dc0477cf21b1b568150824aaec
 
 # VPP - from PNX - RKQ1.200906.002
 vendor/bin/vppservice|555301b19a86374900159423c88efd7bd9cea2f9
