@@ -183,11 +183,11 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a99915765fca7add8de87d7c4ef9bf031e155
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|3e517ec6b4603c6c1f5945b3f131aa69bccb0b08
 
-# Display (HDR) - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
+# Display (HDR) - from OnePlus6 - RKQ1.201217.002
 vendor/lib/libhdr_tm.so|af8f696556839ff13a523a478866064a537c8477
 vendor/lib64/libhdr_tm.so|5267cb8b791aecd6ef8ff64c5206935c5c6f1add
 
-# Display (SDM) - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
+# Display (SDM) - from OnePlus6 - RKQ1.201217.002
 vendor/lib/libdisplayqos.so|682f8ac9e13240bb57e3b15edd2d3edb4f4f67ce
 vendor/lib/libqseed3.so|c328dd5713f5a5f0f081c803812f011eb5efdeef
 vendor/lib/libsdedrm.so|b11f16f16cdeaecb492b7ff2274cc02bd604bf0f
@@ -205,7 +205,7 @@ vendor/lib64/libsdm-disp-vndapis.so|68f9171c08a2ba9654aaa3a1d9b0c050ae07bd97
 vendor/lib64/libsdmextension.so|ddcc83174b5b6dbed08888002cd08674f907e777
 vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
-# Display postprocessing - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
+# Display postprocessing - from OnePlus6 - RKQ1.201217.002
 vendor/bin/hw/vendor.display.color@1.0-service|f953144ced6869e640ca67930cea6d63e38f0a0d
 vendor/bin/mm-pp-dpps|0445e221a376694bd2a24f65ae7dceb32173228f
 vendor/bin/ppd|8b60669c32f091dd5832579892c91dc3eb0e8130
@@ -297,7 +297,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno) - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
+# Graphics (Adreno) - from OnePlus6 - RKQ1.201217.002
 vendor/lib/egl/eglSubDriverAndroid.so|de8684b7f60397dde4f7b334074e64fc22bfe529
 vendor/lib/egl/libEGL_adreno.so|e73369c2ec0751d6912518de205106d4ee19291c
 vendor/lib/egl/libGLESv1_CM_adreno.so|715f3463528f1e74ffa02627ee5916a09e0748f5
@@ -352,7 +352,7 @@ vendor/lib64/libbccQTI.so|61732bb9193b3bf4b593d24b0605cfffd7a38e29
 vendor/lib64/librs_adreno.so|9a046223d0a88297f3188f4ff80eafaa7e46173a
 vendor/lib64/librs_adreno_sha1.so|727a62917ec8006850d2634c4d6e77e7f8ddae52
 
-# Graphics (Vulkan) - from OnePlus6 - RKQ1.201217.002-2107130217-release-keys
+# Graphics (Vulkan) - from OnePlus6 - RKQ1.201217.002
 vendor/lib/hw/vulkan.adreno.so|efe7bb8a06ccb282b250e79aad8a4c5df1b1a611
 vendor/lib64/hw/vulkan.adreno.so|8c588478757fbc3384989303f7a95c437adf7d95
 
