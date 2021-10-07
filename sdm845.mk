@@ -113,6 +113,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl:32 \
     audio.bluetooth.default \
     libbthost_if \
@@ -174,6 +176,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
+    libtinyxml.vendor \
     memtrack.sdm845 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
@@ -187,11 +190,33 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0 \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1 \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2 \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3 \
+    android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4-service.clearkey
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0 \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1 \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0 \
+    android.hardware.gnss@2.0.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -202,6 +227,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
+    android.hidl.allocator@1.0 \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -230,6 +257,11 @@ PRODUCT_PACKAGES += iorap-nall
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0 \
+    android.hardware.keymaster@3.0.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -273,6 +305,8 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1 \
+    android.system.net.netd@1.1.vendor \
     netutils-wrapper-1.0
 
 # Power
@@ -280,6 +314,15 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock \
     vendor.qti.hardware.perf@2.0.vendor
+
+# Neural Network
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0 \
+    android.hardware.neuralnetworks@1.0.vendor \
+    android.hardware.neuralnetworks@1.1 \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -299,7 +342,24 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.2.vendor \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.3.vendor \
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.0.vendor \
+    android.hardware.radio.config@1.1 \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.deprecated@1.0.vendor \
     libjson \
+    libjson.vendor \
     librmnetctl
 
 # Recovery
