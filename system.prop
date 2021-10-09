@@ -70,6 +70,9 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# RIL
+persist.sys.fflag.override.settings_provider_model=false
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q845-14477-1
 
