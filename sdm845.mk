@@ -400,6 +400,8 @@ PRODUCT_PACKAGES += \
 # PRODUCT_BOOT_JARS += \
 #     WfdCommon
 
+include vendor/xiaomi/sdm845-common-extra/wfd.mk
+
 # Override heap growth limit
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=256m
