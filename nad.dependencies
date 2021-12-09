@@ -1,9 +1,5 @@
 [
   {
-    "repository": "android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi"
-  },
-  {
     "remote": "github",
     "repository":  "ThunderkeX/vendor_xiaomi_sdm845-common-extra",
     "target_path": "vendor/xiaomi/sdm845-common-extra",
