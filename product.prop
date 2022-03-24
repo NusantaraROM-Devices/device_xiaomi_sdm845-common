@@ -15,3 +15,6 @@ persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
+
+# Shutdown
+ro.build.shutdown_timeout=2
