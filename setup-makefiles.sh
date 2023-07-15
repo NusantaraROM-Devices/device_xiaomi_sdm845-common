@@ -15,7 +15,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 HAVOC_ROOT="${MY_DIR}/../../.."
 
-HELPER="${HAVOC_ROOT}/vendor/havoc/build/tools/extract_utils.sh"
+HELPER="${HAVOC_ROOT}/vendor/nusantara/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
